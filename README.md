@@ -4,11 +4,11 @@
 
 [Problem's Description](#problem's-description)  
 
-[Solution's description ](#Solution's-description )  
+[Solution's description ](#Solution's-description)  
 
 [Objectif](#objectif)  
 
-[Solution 1 : Dynamic Programming (recursive) approach](#Solution-1-:-Dynamic-Programming-(recursive)-approach)  
+[Solution 1 : Dynamic Programming (recursive) approach](#Solution-1-:-Dynamic-Programming-approach)  
 
 [Solution 2 : Metaheuristic approach VNS : Variable Neighborhood Search](#Solution-2-:-Metaheuristic-approach-VNS-:-Variable-Neighborhood-Search)
 
@@ -18,11 +18,16 @@
 
 [The output](#the-output) 
 
+
+<a name="problem's-description"/>
+
 ## Problem's description
 
 A scheduling problem is a classic problem in operations research which consists in organizing the performance of tasks over time, considering time constraints (deadlines, sequencing constraints) and constraints relating to the availability of the required resources. 
 
 ![Scheduling problem](Images/scheduling.png)
+
+<a name="Solution's-description"/>
 
 ## Solution's description :
 
@@ -30,9 +35,13 @@ I implemented two different solutions to the scheduling problem. It is defined b
 
 Each task has a start and end date, which requires a minimal execution time (denoted in the scripts P), a due date denoted (D), which each task has to be executed before its own due date.
 
+<a name="objectif"/>
+
 ## Objectif :
 
 The objectif if to find the better sequence of tasks which gives the minimal delay (penalty) if we exceed each task's due date, in a way that we minimize the total execution time or the average time to complete a set of tasks, and minimize delays if they exist.
+
+<a name="Solution-1-:-Dynamic-Programming-approach"/>
 
 ## Solution 1 : Dynamic Programming (recursive) approach :
 
@@ -43,6 +52,8 @@ A policy (or strategy) is a decision-making rule which, for each possible situat
 Often, the objective function is a mathematical expectation. Sometimes we can characterize the optimal policy by theorems, often it can be calculated, or calculate an approximation; in some cases (Large size problem) the resolution will be too difficult.
 
 This approach is implemented in the script : ```ordo_Dynamique_Iterative.py ``` [More details in the script's comments].
+
+<a name="Solution-2-:-Metaheuristic-approach-VNS-:-Variable-Neighborhood-Search"/>
 
 ## Solution 2 : Metaheuristic approach VNS : Variable Neighborhood Search :
 
@@ -60,6 +71,8 @@ In this project, I used 3 neighborhood structures: L = (N (1), N (2), N (3)) a l
     2- N(2) represents the insertion;
     3- N(3) represents the left pivot. 
 
+<a name="About-the-files-(input-and-output"/>
+
 ## About the files (input and output) ! 
 
 <a name="input"/>
@@ -69,6 +82,8 @@ In this project, I used 3 neighborhood structures: L = (N (1), N (2), N (3)) a l
 The input data (Tasks) is stored in ```LesDonnesMeta.csv``` and  ```LesDonneesDyna.csv``` file, where each task has an execution time, a dude date, and a weight. 
 
 A weight must be between 20% and 60% of the sum of the task's execution time This is explained more in script's comments. 
+
+<a name="the-output"/>
 
 ### The output :
 
