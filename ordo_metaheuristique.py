@@ -152,6 +152,6 @@ def optimisation(seq_arg):
     return seq_fin, cout_fin
 
 min_seq, min_cout = optimisation(taches)
-injection_resultat=f"Le chemin optimal est : {min_seq} \n Le cout minimal est {min_cout}"
+injection_resultat=f"La séquence optimale est : {min_seq} \n Le cout minimal est {min_cout}"
 with open("resultat_meta.csv", "w") as new_file:
     new_file.write(injection_resultat)

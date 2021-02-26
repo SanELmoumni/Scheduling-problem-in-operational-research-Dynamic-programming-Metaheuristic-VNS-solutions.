@@ -88,7 +88,7 @@ fin = time.time()
 with open('resultat.txt','w') as resultat:
     resultat.write("-la valeur optimal est :"+str(etapeII[k][0])+"\n")
 
-    resultat.write("-La sequence optimal est : \n")
+    resultat.write("-La séquence optimale est : \n")
     resultat.write("-"*len(str(etapeII[k][1])) +"\n")
     resultat.write('|'+str(etapeII[k][1])+'|\n')
     resultat.write("-"*len(str(etapeII[k][1])) +"\n")
