@@ -5,7 +5,7 @@ import time
 pi = []
 wi = []
 di = []
-n = input("Saisir combien de taches souhaitez-vous ordonnancer ? \n")
+n = input("How many tasks do you want to schedule ? \n")
 
 k=tuple(range(1,n+1))
 #la fonction qui supprime un element dans l'ensemble des taches, elle facilite comment retrouver les sous taches de J
