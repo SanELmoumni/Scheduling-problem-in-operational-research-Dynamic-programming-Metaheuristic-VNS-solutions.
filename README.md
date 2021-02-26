@@ -8,9 +8,9 @@
 
 [Objectif](#objectif)  
 
-[Solution 1 : Dynamic Programming (recursive) approach](#Solution-1-:-Dynamic-Programming-approach)  
+[Solution 1 : Dynamic Programming (recursive) approach](#dynamic)  
 
-[Solution 2 : Metaheuristic approach VNS : Variable Neighborhood Search](#Solution-2-:-Metaheuristic-approach-VNS-:-Variable-Neighborhood-Search)
+[Solution 2 : Metaheuristic approach VNS : Variable Neighborhood Search](#metaheur)
 
 [About the files (input and output)](#About-the-files-(input-and-output))  
 
@@ -41,7 +41,7 @@ Each task has a start and end date, which requires a minimal execution time (den
 
 The objectif if to find the better sequence of tasks which gives the minimal delay (penalty) if we exceed each task's due date, in a way that we minimize the total execution time or the average time to complete a set of tasks, and minimize delays if they exist.
 
-<a name="Solution-1-:-Dynamic-Programming-approach"/>
+<a name="dynamic"/>
 
 ## Solution 1 : Dynamic Programming (recursive) approach :
 
@@ -53,7 +53,7 @@ Often, the objective function is a mathematical expectation. Sometimes we can ch
 
 This approach is implemented in the script : ```ordo_Dynamique_Iterative.py ``` [More details in the script's comments].
 
-<a name="Solution-2-:-Metaheuristic-approach-VNS-:-Variable-Neighborhood-Search"/>
+<a name="metaheur"/>
 
 ## Solution 2 : Metaheuristic approach VNS : Variable Neighborhood Search :
 
